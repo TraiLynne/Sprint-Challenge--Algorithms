@@ -2,9 +2,9 @@ Add your answers to the Algorithms exercises here.
 
 ## Exercise I
 
-a) Constant time `O(c)`- the only value that changes is `a`. Assuming `n` is equal to or greater than 1, multiplying `n` by itself and adding it to `a` will always be a value greater than `n`, the loop will stop after the first go.
+a)  Ok I get it , I think ... this one would be logarithmic time `O(log n)` because the number of operations is determined by the while loop, not `n` directly. But it won't go on forever. It will eventually stop.
 
-b) My guess is Linear `O(n)` or Logarithmic Time `O(log n)` - the number of operations this would take is in direct proportion to `n` because the loop will end when `i` gets to `n`. `n` will stay a constant value, therefore the loop will end. But since there are multiple for loops in there, the number of operations will grow slowly the larger the value of `n`. I will come back to this one ...
+b) No wait, I think this one is `O(n^c)` because of the loops. Since this is a nested loop, the number of operations is done again for each loop in that length. The loop is executed on the `n` 3 times. The first loop will be done `n` times, the second loop will be done `n` times for each of the first loops and so forth in the 3rd loop. So `n * n * n` or `n^3`. 
 
 c) Linear Time `O(n)` - the number of operations is in direct proportion to n. If I am reading this right, this is basically a countdown from `n` to 0.
 
