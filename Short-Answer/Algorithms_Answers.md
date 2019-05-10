@@ -9,4 +9,27 @@ b) My guess is Linear `O(n)` or Logarithmic Time `O(log n)` - the number of oper
 c) Linear Time `O(n)` - the number of operations is in direct proportion to n. If I am reading this right, this is basically a countdown from `n` to 0.
 
 ## Exercise II
+It sounds like I would do a binary search with a `O(log n)` runtime complexity.
 
+1. Set `low = 0`, `high = n`, `m = n/2`
+2. throw the egg from floor `m`, unless `high == m`
+      
+      a) if safe ? 
+         
+         1a. set `low = m`
+         
+         2a. set `range = [low ... high]`
+         
+         3a. set `m = range[length of range/2]`
+         
+         4a. repeat step 2
+      
+      b) if yolk ?
+         
+         1b. set `high = m`
+         
+         2b. set `range = [low ... high]`
+         
+         3b. set `m = range[length of range/2]`
+         
+         4b. repeat step 2
