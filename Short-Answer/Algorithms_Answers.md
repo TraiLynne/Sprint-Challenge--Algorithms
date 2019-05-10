@@ -33,3 +33,15 @@ It sounds like I would do a binary search with a `O(log n)` runtime complexity.
          3b. set `m = range[length of range/2]`
          
          4b. repeat step 2
+
+But at the same time ...If i start at the bottom floor and just keep moving up until the egg breaks, I will only lose one egg. That is if, everything is works as it should. So I guess it depends on if I want to not drop as many eggs in general or if I don't want a lot of broken eggs. I think that is Linear Time. 
+
+1. Start at `current = 1`
+2. Throw egg
+   1. if safe ?
+      1. `safe = current`
+      2. `current = current + 1`
+   2. if yolk ?
+      1. `safe = current - 1`
+      2. `unsafe = current`
+      3. Done
